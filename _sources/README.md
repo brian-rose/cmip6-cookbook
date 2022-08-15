@@ -1,19 +1,42 @@
+<img src="notebooks/images/cmip6-logo.webp" width=500 alt="CMIP6 logo"></img>
+
 # CMIP6 Cookbook
 
 [![nightly-build](https://github.com/ProjectPythiaTutorials/cmip6-cookbook/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/ProjectPythiaTutorials/cmip6-cookbook/actions/workflows/nightly-build.yaml)
-[![Binder](https://binder-staging.2i2c.cloud/badge_logo.svg)](https://binder-staging.2i2c.cloud/v2/gh/ProjectPythiaTutorials/cmip6-cookbook.git/main)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ProjectPythiaTutorials/cmip6-cookbook.git/main)
 
 This Project Pythia Cookbook covers examples of analysis of Google Cloud CMIP6 data using Pangeo tools.
 
 ## Motivation
 
+From the [CMIP6 website](https://esgf-node.llnl.gov/projects/cmip6/):
 
+> The simulation data produced by models under previous phases of CMIP have been used in thousands of research papers ... and the multi-model results provide some perspective on errors and uncertainty in model simulations. This information has proved invaluable in preparing high profile reports assessing our understanding of climate and climate change (e.g., the IPCC Assessment Reports).
+
+With such a large amount of model output produced, moving the data around is inefficient. In this collection of notebooks, you will learn how to access cloud-optimized CMIP6 datasets, in addition to a few examples of using that data to analyze some aspects of climate change.
+
+## Authors
+
+[Ryan Abernathey](https://github.com/rabernat), Henri Drake, [Robert Ford](https://github.com/r-ford)
+
+### Contributors
+
+<a href="https://github.com/ProjectPythiaCookbooks/cmip6-cookbook/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ProjectPythiaCookbooks/cmip6-cookbook" />
+</a>
 
 ## Structure
 
+### Foundations
+
+This section includes three variations of downloading CMIP6 data from cloud storage.
+
 ### Example workflows
 
-
+There are currently three examples of using this data to 
+- Estimate equilibrium climate sensitivity (ECS)
+- Plot global mean surface temperature under two different [Shared Socioeconomic Pathways](https://unece.org/fileadmin/DAM/energy/se/pdfs/CSE/PATHWAYS/2019/ws_Consult_14_15.May.2019/supp_doc/SSP2_Overview.pdf)
+- Plot changes in precipitation intensity under the SSP585 scenario
 
 ## Running the Notebooks
 You can either run the notebook using [Binder](https://mybinder.org/) or on your local machine.
@@ -38,12 +61,10 @@ Jupyter](https://foundations.projectpythia.org/foundations/getting-started-jupyt
 ### Running on Your Own Machine
 If you are interested in running this material locally on your computer, you will need to follow this workflow:
 
-(Replace "cookbook-example" with the title of your cookbooks)   
-
-1. Clone the `https://github.com/ProjectPythiaTutorials/cmip6-cookbook` repository:
+1. Clone the `https://github.com/ProjectPythiaCookbooks/cmip6-cookbook` repository:
 
    ```bash
-    git clone https://github.com/ProjectPythiaTutorials/cmip6-cookbook.git
+    git clone https://github.com/ProjectPythiaCookbooks/cmip6-cookbook.git
     ```  
 1. Move into the `cmip6-cookbook` directory
     ```bash
